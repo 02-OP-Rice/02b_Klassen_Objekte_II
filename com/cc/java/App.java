@@ -12,9 +12,13 @@ public class App {
         output("Blick von innen: " + cat1.getInstanceVar());
 
 
-        output(cat1.name);
-        output(cat1.furColor);
-        output(Integer.toString(cat1.age));
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
+
+        cat1.setFurColor("pink");
+        output(cat1.getFurColor());
+
 
         output("--------------------");
         
@@ -23,9 +27,9 @@ public class App {
         output("Blick von innen: " + cat2.getInstanceVar());
 
         
-        output(cat2.name);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age));
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
 
     } 
 
